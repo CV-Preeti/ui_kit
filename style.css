@@ -3,14 +3,16 @@ html,body{
     margin: 0;
 }
 .navbar{ 
-    width:100vw ;  top:0px ;position:fixed; list-style: none; right:0px;  z-index: 100;
+    width:100vw ;  top:0px ;position:fixed; list-style: none; right:0px;
+      z-index: 100; height:8vh; background: transparent;
 
     }
-.ui{color:white;font-family: Arial;   text-align: center ;font-size:xx-large;color:white; font-weight: 800;
+.navbar .ui{color:white;font-family:Arial; 
+     text-align: center ;font-size:xx-large; font-weight: 800; height:8vh;
     float:left;width:15%;margin-right:36% ;}
 .navbar li { width:12%; color: white; float:left ; font-family: Arial; 
-     font-size: large; text-align: center ; }
-.btn{background-color:#004aad ; }
+     font-size: large; text-align: center ; height:4vh;  }
+.btn{background-color:#004aad ; border-radius:5px ; }
     
 .textbox{ width:25vw;  height:51vh; position:relative; 
        top:25vh; margin-left:17vw ;  float:left;
@@ -23,16 +25,26 @@ html,body{
 .pics{height: 48vh; width:40vw; top:3vh; }
 
 .button{ background-color:#004aad ; color:white; position:relative;top:30vh; margin-left:17vw ;
-    height:8vh;width:14vw; font-size: large; border:none;outline: none;}
+    height:8vh;width:14vw; font-size: large; border:none;outline: none; border-radius:10px ;}
 
     .body{background-image: linear-gradient(to right bottom,rgba(98, 140, 219, 0.908),rgba(75, 7, 38, 0.908)),
-       url( ./image/undraw_mobile_ux_o0e1.svg);
-       background-position:center ; background-size: cover;
-       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); height:100vh;position:relative;
+       url( ./image/undraw_mobile_ux_o0e1.svg);  width:100vw;
+       background-position:center ; background-size: cover; top:0vh;
+       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); height:100vh;position:absolute;
     }
-.division1{height:70vh; width:20vw;border:1px solid rgb(190, 187, 187); position:relative;
-   top:15vh; margin-left:6vw ; float:left; box-shadow: 0 8px 6px -6px black; 
- background-color: white; border: 0.5px solid rgb(134, 134, 134); }
+.division1{
+    height:70vh; 
+    width:20vw;
+    border:1px solid rgb(190, 187, 187);
+     position:relative;
+   top:15vh;
+    margin-left:7vw ; 
+    float:left; 
+    box-shadow: 0 8px 6px -6px black; 
+     background-color: white;
+     border: 0.5px solid rgb(134, 134, 134); 
+    }
+
    .circle1{ background: rgb(214, 52, 87); width: 5vw; height: 10vh; border-radius: 50%;
     position:absolute; margin-top: 5vh; margin-left:7.5vw; box-shadow:  0 0 0 10px rgba(209, 137, 149, 0.908) ;
       }
@@ -48,16 +60,21 @@ html,body{
 position:absolute;  margin-top:21vh ; color:black; text-align:center ;  } 
 .division1 p {height:20vh;width:18vw;position:absolute;
     text-align: justify;margin-left:1vw ; top:28vh}
-.divbutton{ position: absolute; height:5vh;width:8vw;bottom:4vh; color:white;border-radius:15px;
+.division1 button{ position: absolute; height:5vh;width:8vw;bottom:4vh; color:white;border-radius:15px;
     
  background-image:linear-gradient(to right ,rgba(168, 12, 168, 0.908),rgba(39, 7, 75, 0.908)) ;
-margin-left:6vw;}
-.middiv{  position:absolute; top:100vh;
+margin-left:6vw; border:none;outline:none;}
+.middiv{  position:absolute; top:100vh;  width:100vw;
     background-image:linear-gradient(to right bottom,rgba(213, 218, 228, 0.908),rgba(114, 54, 163, 0.908)),
     url( ./image/undraw_progress_data_4ebj.svg);clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
-     height:115vh; z-index:50 ;
+     height:115vh; 
     }
-.footer{ height:15vh;width:99vw;position:absolute; text-align:center ;
-    color:white; top: 95vh; background-color: rgb(4, 4, 66);
-    font-family: Arial; font-weight:800; font-size:larger; 
+.footer{ height:15vh;position:relative;  
+    top:95vh; background-color: rgb(5, 5, 87);
 }
+.footer p{color:rgb(235, 228, 228);  text-align:center ; top:50%;width:28vw; margin-left:-14vw ;
+    font-family: Arial; font-weight:800; font-size:larger; position: absolute; left:50% ;
+  height:5vh; margin-top:-2.5vh ; } 
+  .footer h5{ color:white; text-align:center;font-family: Arial; position:absolute;left:50%;
+    width:25vw; margin-left:-12.5vw ; top:50%; height:5vh;
+  }
